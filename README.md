@@ -2,6 +2,11 @@
 
 easyck 是一款基於 Java (Swing + JavaFX WebView) 開發的嵌入式多功能瀏覽器。本專案具備多分頁隔離、AES 加密虛擬檔案系統、雙快照備份機制、內建輕量型 API HttpServer，以及動態 JAR 插件載入架構，專為注重隱私安全與客製化擴充的環境而設計。
 
+> [!WARNING]
+> **執行環境要求**
+> 本程式需在 JDK (或第三方 JRE) 21 (含) 以上版本方可正常執行。請確認您的 Java 執行環境符合此需求，否則可能導致啟動失敗或功能異常。
+> **我們不保證本程式能在任何第三方修改、精簡或非官方發行的 Java 執行環境上穩定運作。**
+
 ## 核心功能
 
 * **資料加密與安全**：啟動時強制進行密碼驗證，採用 PBKDF2WithHmacSHA256 進行密鑰衍生。書籤、Cookie、網站權限等使用者資料皆透過 AES/CBC/PKCS5Padding 加密儲存於本地 `data.sec` 檔案中。
@@ -26,4 +31,4 @@ easyck 是一款基於 Java (Swing + JavaFX WebView) 開發的嵌入式多功能
 > 本專案為不開源（Closed-Source）專案。
 
 ### 附帶檔案
-請在下方 **Assets** 區塊直接下載 `easyck.exe`。
+請直接下載 `easyck_1.0.2.exe`。
